@@ -24,7 +24,7 @@ Let activity to foreground from background
         public void onReceive(Context context, Intent intent) {
             try {
                 Log.e(TAG, "onReceive: action = " + intent.getAction());
-//                unregisterReceiver(mMainActivityReceiver);
+                //unregisterReceiver(mMainActivityReceiver);
 
                 Intent i = new Intent(mainActivity, MainActivity.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);// * onResume activity avoid re onCreate it
